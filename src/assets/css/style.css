@@ -55,6 +55,10 @@ ul{
 	list-style: none;
 }
 
+.no-margin {
+    margin: 0 !important;
+}
+
 .btn-primary{
 	background-color: #3fc380;
 	border-top: none;
@@ -171,6 +175,11 @@ a:focus {
 
 .media p{
 	margin: 0;
+}
+
+ul.nav {
+    margin: 0 auto;
+    float: none;
 }
 /* FORM CONFIGURATION */
 
@@ -353,6 +362,9 @@ time{
 	background-color: #333333;
 }
 
+.col-left{ padding-right: 25px;}
+.col-right{ padding-left: 25px;}
+
 /* GREY SECTION */
 #g {
 	padding-top: 50px;
@@ -418,6 +430,14 @@ time{
 	color: white;
 }
 
+@media (min-width: 768px) {
+
+    ul.nav {
+        display: inline-block;
+        max-height: 45px;
+    }
+}
+
 @media screen and (max-width: 767px) {
 	#h {
 		min-height: 600px;
@@ -436,4 +456,8 @@ time{
 		text-align: left;
 		margin-bottom: 30px;
 	}
+
+   .navbar-collapse {
+        padding: 0;
+    }
 }
