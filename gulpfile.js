@@ -69,6 +69,18 @@ gulp.task('extras', function () {
 
 gulp.task('clean', require('del').bind(null, ['.tmp', 'dist']));
 
+gulp.task('deploy', function() {
+
+  return gulp.src('dist/**/*')
+  .pipe($.ftp({
+    host: 'waws-prod-bn1-003.ftp.azurewebsites.windows.net',
+    user: process.env.FTP_USERNAME,
+    pass: process.env.FTP_PASSWORD,
+    remotePath: '/site/wwwroot'
+  }))
+  .pipe(gulp.dest('dist'));
+});
+
 gulp.task('serve', ['styles', 'fonts'], function () {
   browserSync({
     notify: false,

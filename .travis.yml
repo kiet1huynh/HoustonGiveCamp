@@ -4,8 +4,8 @@ node_js:
 - '0.12'
 env:
   global:
-  - secure: CvzJiMBNsLKVayLPLj8MQD+3PhaBgTF6RP37QwjXzdlzZ4uWhECofVWp0+BumuZ65wMbKucMC0msxChbvC9gK/yhqQBi02D8Ei4b5jmJU/suJ8CJprdQaGnMA3CWoFbS+O6LdttbXQVlecJYK081dz4nnvVnTM32ZqvhLbB5e94=
-  - secure: JdJ9tzbn3rBDmFJDeNbLCtMaUbQZdyLQ2ev4J+ejWvQJl7BTG2QGc05xeVB+T+Xgl3JPQ/9BBC6kM+elZg14UvKr25UbT8t/ljoISh4+b/XAtzSVE6NdCuZyMMsNe0f/f+y1fTRhtDxTxgTqyJdmTBGLXasMqT+wnR6weFKwGgQ=
+  - secure: M69PlvxE9+CzTDZ29m7xLWb5QQfVxgRD2fgRh1qx70bg8/bYzIX9gJ5eLSzDRrDyCaeh3a6KLhqIRwWd7tt5xjICKUWZuk3njNmocQrHGWbPq9J+DFwpaJ+H/5gUPPs1N/ObZDzLG/XsO2U/22kQ/oYnKe2pU6xfaqwhtYD3r2w=
+  - secure: ZxNvnBPONwPP6Dtci9firwNWn4t89jeVjRLXo6KPsq43eG2qrftsHqCTTla3Tn6HljTtSCooPlhDQW1MPSkAWcFstkMTGP1ZNZIVNt/+/TOIeyTURZC5C35/w/QV3Rteamji+JBftSaaw+B2k5ksjSf+LAFmzW7gu1R4gSFQMw8=
 before_script:
 - npm install -g gulp
 - npm install -g bower
@@ -13,5 +13,4 @@ before_script:
 script:
 - gulp
 after_success:
-- cd dist
-- "curl --ftp-create-dirs -T uploadfilename -u $FTPUSER:$FTPPASSWORD ftp://waws-prod-bn1-003.ftp.azurewebsites.windows.net/site/wwwroot"
+- gulp deploy
