@@ -1,10 +1,17 @@
 sudo: false
 language: node_js
 node_js:
-  - '0.12'
+- '0.12'
+env:
+  global:
+  - secure: CvzJiMBNsLKVayLPLj8MQD+3PhaBgTF6RP37QwjXzdlzZ4uWhECofVWp0+BumuZ65wMbKucMC0msxChbvC9gK/yhqQBi02D8Ei4b5jmJU/suJ8CJprdQaGnMA3CWoFbS+O6LdttbXQVlecJYK081dz4nnvVnTM32ZqvhLbB5e94=
+  - secure: JdJ9tzbn3rBDmFJDeNbLCtMaUbQZdyLQ2ev4J+ejWvQJl7BTG2QGc05xeVB+T+Xgl3JPQ/9BBC6kM+elZg14UvKr25UbT8t/ljoISh4+b/XAtzSVE6NdCuZyMMsNe0f/f+y1fTRhtDxTxgTqyJdmTBGLXasMqT+wnR6weFKwGgQ=
 before_script:
-  - npm install -g gulp
-  - npm install -g bower
-  - bower install -f
+- npm install -g gulp
+- npm install -g bower
+- bower install -f
 script:
-  - gulp
+- gulp
+after_success:
+- cd dist
+- "curl --ftp-create-dirs -T uploadfilename -u $FTPUSER:$FTPPASSWORD ftp://waws-prod-bn1-003.ftp.azurewebsites.windows.net/site/wwwroot"
