@@ -1,0 +1,7 @@
+{
+    "globals": {
+        "$": false,
+        "toastr": false,
+        "ko": false
+      }
+}
