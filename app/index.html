@@ -10,8 +10,8 @@
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="/lib/scrolling-nav/scrolling-nav.css" />
-  <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="/bower_components/components-font-awesome/css/font-awesome.css" />
+  <link rel="stylesheet" href="/bower_components/toastr/toastr.min.css" />
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -24,375 +24,376 @@
   <!-- endbuild -->
 </head>
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-    <!--[if lt IE 10]>
-      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-      <![endif]-->
+  <!--[if lt IE 10]>
+  <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
 
-      <nav class="navbar navbar-default navbar-fixed-top nopadding">
-        <div class="container">
-          <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
+  <nav class="navbar navbar-default navbar-fixed-top nopadding">
+    <div class="container">
+      <div class="navbar-header page-scroll">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse text-center">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#page-top" class="page-scroll">Home</a></li>
+          <li><a href="#about" class="page-scroll">About</a></li>
+          <li><a href="#schedule" class="page-scroll">Schedule</a></li>
+          <li><a href="#participants" class="page-scroll">Participants</a></li>
+          <li><a href="#faq" class="page-scroll">FAQ</a></li>
+          <li><a href="#sponsors" class="page-scroll">Sponsors</a></li>
+          <li><a href="#contact" class="page-scroll">Contact</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>
+  </nav>
+
+
+  <div id="h">
+    <div class="logo">
+    </div><!--/logo-->
+    <div class="container centered">
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+          <div class="inlineblock">
+            <h1>Houston GiveCamp</h1>
+            <h2>September 25-27, 2015<br>Houston, TX</h2>
           </div>
-          <div id="navbar" class="navbar-collapse collapse text-center">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#page-top" class="page-scroll">Home</a></li>
-              <li><a href="#about" class="page-scroll">About</a></li>
-              <li><a href="#schedule" class="page-scroll">Schedule</a></li>
-              <li><a href="#participants" class="page-scroll">Participants</a></li>
-              <li><a href="#faq" class="page-scroll">FAQ</a></li>
-              <li><a href="#sponsors" class="page-scroll">Sponsors</a></li>
-              <li><a href="#contact" class="page-scroll">Contact</a></li>
-            </ul>
-          </div><!--/.nav-collapse -->
         </div>
-      </nav>
-
-
-      <div id="h">
-        <div class="logo">
-        </div><!--/logo-->
-        <div class="container centered">
-          <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-              <div class="inlineblock">
-                <h1>Houston GiveCamp</h1>
-                <h2>September 25-27, 2015<br>Houston, TX</h2>
+      </div><!--/row-->
+    </div><!--/container-->
+  </div><!--H-->
+  <section class="section1" id="charities">
+    <div class="container ptb">
+      <div class="row">
+        <div class="col-left col-md-6 text-left-sm">
+          <h3>Charities</h3>
+          <p>Does your charity need a new website?</p>
+          <a href="#" class="btn btn-primary">Learn More</a>
+        </div><!--/col-md-6-->
+        <div class="col-right col-md-6">
+          <h3 class="text-left">Volunteers</h3>
+          <p>We need you!  Give a weekend to help out a local charity.</p>
+          <a href="#" class="btn btn-primary">Sign Up</a>
+        </div><!--/col-md-6-->
+      </div><!--/row-->
+    </div><!-- /.container -->
+  </section>
+  <section id="about">
+    <div class="container ptb text-center">
+      <div class="row">
+        <h3>About</h3>
+        <p class="margin-bottom-40">
+          GiveCamp is a weekend-long event where technology professionals from designers, developers and database administrators to marketers and web strategists donate their time to provide solutions for non-profit organizations. Since its inception in 2007, the GiveCamp program has provided benefits to hundreds of charities, worth millions of dollars of developer and designer time in services!
+        </p>
+        <div class="col-md-3 col-md-offset-3">
+          <i class="fa fa-calendar fa-4x"></i>
+          <p>Friday, September 25 -<br>Sunday, September 27<br>2015</p>
+        </div>
+        <div class="col-md-3">
+          <i class="fa fa-map-marker fa-4x"></i>
+          <p><strong>David Weekley Homes</strong><br><a href="#">1111 N Post Oak Rd<br>Houston, TX 77055</a></p>
+        </div>
+      </div><!--/row-->
+    </div><!--/.container-->
+  </section>
+  <section class="section2 schedule" id="schedule">
+    <div class="container ptb">
+      <div class="row">
+        <h3>Schedule</h3>
+        <div>
+          <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab">Sept 16</a></li>
+            <li class=""><a href="#tab2" data-toggle="tab">Sept 25</a></li>
+            <li><a href="#tab3" data-toggle="tab">Sept 26</a></li>
+            <li><a href="#tab4" data-toggle="tab">Sept 27</a></li>
+          </ul>
+          <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+              <div class="clearfix">
+                <time class="pull-left">6:30 pm</time>
+                <h4 class="pull-left">Charity Meet and Greet</h4>
               </div>
-            </div>
-          </div><!--/row-->
-        </div><!--/container-->
-      </div><!--H-->
-      <section class="section1" id="charities">
-        <div class="container ptb">
-          <div class="row">
-            <div class="col-left col-md-6 text-left-sm">
-              <h3>Charities</h3>
-              <p>Does your charity need a new website?</p>
-              <a href="#" class="btn btn-primary">Learn More</a>
-            </div><!--/col-md-6-->
-            <div class="col-right col-md-6">
-              <h3 class="text-left">Volunteers</h3>
-              <p>We need you!  Give a weekend to help out a local charity.</p>
-              <a href="#" class="btn btn-primary">Sign Up</a>
-            </div><!--/col-md-6-->
-          </div><!--/row-->
-        </div><!-- /.container -->
-      </section>
-      <section id="about">
-        <div class="container ptb text-center">
-          <div class="row">
-            <h3>About</h3>
-            <p class="margin-bottom-40">
-              GiveCamp is a weekend-long event where technology professionals from designers, developers and database administrators to marketers and web strategists donate their time to provide solutions for non-profit organizations. Since its inception in 2007, the GiveCamp program has provided benefits to hundreds of charities, worth millions of dollars of developer and designer time in services!
-            </p>
-            <div class="col-md-3 col-md-offset-3">
-              <i class="fa fa-calendar fa-4x"></i>
-              <p>Friday, September 25 -<br>Sunday, September 27<br>2015</p>
-            </div>
-            <div class="col-md-3">
-              <i class="fa fa-map-marker fa-4x"></i>
-              <p><strong>David Weekley Homes</strong><br><a href="#">1111 N Post Oak Rd<br>Houston, TX 77055</a></p>
+              <p>Two week prior to the coding weekend we all get together for a meet and greet, Dev's
+                and Charities. (Notice it's on Wednesday to respect ACL!)</p>
+
+                <p>
+                  Charities will each give a 2 minute presentation about who they are and what they
+                  hope to get out of the GiveCamp project.
+                  This will take maybe 1/2 hr. We will also hand out one-page developer-written
+                  technical summaries of the projects.
+                </p>
+
+                <p>Then, during the next half hour, developers get time to chat with the charities,
+                  review the summaries, and select their charity preferences.</p>
+
+                  <p>We'll provide snacks and appetizers! :)</p>
+
+                </div>
+
+                <div class="tab-pane" id="tab2">
+                  <div class="clearfix">
+                    <time class="pull-left">6:30 pm - 9:30pm</time>
+                    <h4 class="pull-left">Coding Begins!!!</h4>
+                  </div>
+
+                </div>
+
+                <div class="tab-pane" id="tab3">
+                  <div class="clearfix">
+                    <time class="pull-left">10:00</time>
+                    <h4 class="pull-left">Day 2!</h4>
+                  </div>
+                  <p>Doors open and the day begins with coffee, bagels, donuts and we get back into delivering delight!</p>
+                  <div class="clearfix">
+                    <time class="pull-left">12:30</time>
+                    <h4 class="pull-left">Lunch is Served</h4>
+                  </div>
+                  <p>Keep coding and throw down some grub!</p>
+                  <div class="clearfix">
+                    <time class="pull-left">5:00</time>
+                    <h4 class="pull-left">Dinner is served!</h4>
+                  </div>
+                  <p>Feed the code with some grub!!!</p>
+                </div>
+                <div class="tab-pane" id="tab4">
+                  <div class="clearfix">
+                    <time class="pull-left">10:00</time>
+                    <h4 class="pull-left">Day 3 final stretch!</h4>
+                  </div>
+                  <p>Doors open and the day begins with coffee, bagels, donuts and final stretch of coding commences!</p>
+                  <div class="clearfix">
+                    <time class="pull-left">12:30</time>
+                    <h4 class="pull-left">Lunch is Served</h4>
+                  </div>
+                  <p>Keep coding and throw down some grub!</p>
+                  <div class="clearfix">
+                    <time class="pull-left">5:00</time>
+                    <h4 class="pull-left">Project Showcase</h4>
+                  </div>
+                  <p>Wrap up the weekend with a showcase of all the killer work everyone has delivered!</p>
+                </div>
+
+              </div>
             </div>
           </div><!--/row-->
         </div><!--/.container-->
       </section>
-      <section class="section2 schedule" id="schedule">
+      <section id="participants">
         <div class="container ptb">
+          <h3>Participants</h3>
           <div class="row">
-            <h3>Schedule</h3>
-            <div>
-              <ul class="nav nav-tabs">
-                <li class="active"><a href="#tab1" data-toggle="tab">Sept 16</a></li>
-                <li class=""><a href="#tab2" data-toggle="tab">Sept 25</a></li>
-                <li><a href="#tab3" data-toggle="tab">Sept 26</a></li>
-                <li><a href="#tab4" data-toggle="tab">Sept 27</a></li>
-              </ul>
-              <div class="tab-content">
-                <div class="tab-pane active" id="tab1">
-                  <div class="clearfix">
-                    <time class="pull-left">6:30 pm</time>
-                    <h4 class="pull-left">Charity Meet and Greet</h4>
-                  </div>
-                  <p>Two week prior to the coding weekend we all get together for a meet and greet, Dev's
-                    and Charities. (Notice it's on Wednesday to respect ACL!)</p>
-
-                    <p>
-                      Charities will each give a 2 minute presentation about who they are and what they
-                      hope to get out of the GiveCamp project.
-                      This will take maybe 1/2 hr. We will also hand out one-page developer-written
-                      technical summaries of the projects.
-                    </p>
-
-                    <p>Then, during the next half hour, developers get time to chat with the charities,
-                      review the summaries, and select their charity preferences.</p>
-
-                      <p>We'll provide snacks and appetizers! :)</p>
-
-                    </div>
-
-                    <div class="tab-pane" id="tab2">
-                      <div class="clearfix">
-                       <time class="pull-left">6:30 pm - 9:30pm</time>
-                       <h4 class="pull-left">Coding Begins!!!</h4>
-                     </div>
-
-                   </div>
-
-                   <div class="tab-pane" id="tab3">
-                    <div class="clearfix">
-                      <time class="pull-left">10:00</time>
-                      <h4 class="pull-left">Day 2!</h4>
-                    </div>
-                    <p>Doors open and the day begins with coffee, bagels, donuts and we get back into delivering delight!</p>
-                    <div class="clearfix">
-                      <time class="pull-left">12:30</time>
-                      <h4 class="pull-left">Lunch is Served</h4>
-                    </div>
-                    <p>Keep coding and throw down some grub!</p>
-                    <div class="clearfix">
-                      <time class="pull-left">5:00</time>
-                      <h4 class="pull-left">Dinner is served!</h4>
-                    </div>
-                    <p>Feed the code with some grub!!!</p>
-                  </div>
-                  <div class="tab-pane" id="tab4">
-                    <div class="clearfix">
-                      <time class="pull-left">10:00</time>
-                      <h4 class="pull-left">Day 3 final stretch!</h4>
-                    </div>
-                    <p>Doors open and the day begins with coffee, bagels, donuts and final stretch of coding commences!</p>
-                    <div class="clearfix">
-                      <time class="pull-left">12:30</time>
-                      <h4 class="pull-left">Lunch is Served</h4>
-                    </div>
-                    <p>Keep coding and throw down some grub!</p>
-                    <div class="clearfix">
-                      <time class="pull-left">5:00</time>
-                      <h4 class="pull-left">Project Showcase</h4>
-                    </div>
-                    <p>Wrap up the weekend with a showcase of all the killer work everyone has delivered!</p>
-                  </div>
-
-                </div>
+            <div class="col-md-4 media">
+              <div class="media-left">
+                <img src="images/deran.jpg" height="100" width="100" class="img-circle img-responsive">
               </div>
-            </div><!--/row-->
-          </div><!--/.container-->
-        </section>
-        <section id="participants">
-          <div class="container ptb">
-            <h3>Participants</h3>
-            <div class="row">
-              <div class="col-md-4 media">
-                <div class="media-left">
-                  <img src="images/deran.jpg" height="100" width="100" class="img-circle img-responsive">
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">Deran Schilling</h4>
-                  <p>.NET Developer</p>
-                  <p>Headspring</p>
-                </div>
+              <div class="media-body">
+                <h4 class="media-heading">Deran Schilling</h4>
+                <p>.NET Developer</p>
+                <p>Headspring</p>
               </div>
-              <div class="col-md-4 media">
-                <div class="media-left">
-                  <img src="images/kiet.jpg" height="100" width="100" class="img-circle img-responsive">
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">Kiet Huynh</h4>
-                  <p>.NET Developer</p>
-                  <p>Headspring</p>
-                </div>
+            </div>
+            <div class="col-md-4 media">
+              <div class="media-left">
+                <img src="images/kiet.jpg" height="100" width="100" class="img-circle img-responsive">
               </div>
-              <div class="col-md-4 media">
-                <div class="media-left">
-                  <img src="images/eric.jpg" height="100" width="100" class="img-circle img-responsive">
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">Eric Huang</h4>
-                  <p>.NET Developer</p>
-                  <p>Headspring</p>
+              <div class="media-body">
+                <h4 class="media-heading">Kiet Huynh</h4>
+                <p>.NET Developer</p>
+                <p>Headspring</p>
+              </div>
+            </div>
+            <div class="col-md-4 media">
+              <div class="media-left">
+                <img src="images/eric.jpg" height="100" width="100" class="img-circle img-responsive">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Eric Huang</h4>
+                <p>.NET Developer</p>
+                <p>Headspring</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 media">
+              <div class="media-left">
+                <img src="images/eduardo.jpg" height="100" width="100" class="img-circle img-responsive">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Eduardo Ramos</h4>
+                <p>.NET Developer</p>
+                <p>Headspring</p>
+              </div>
+            </div>
+            <div class="col-md-4 media">
+              <div class="media-left">
+                <img src="images/claudia.jpg" height="100" width="100" class="img-circle img-responsive">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Claudia Love</h4>
+                <p>Designer</p>
+                <p>Headspring</p>
+              </div>
+            </div>
+            <div class="col-md-4 media">
+              <div class="media-left">
+                <img src="images/dane.jpg" height="100" width="100" class="img-circle img-responsive">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Dane Schilling</h4>
+                <p>.NET Developer</p>
+                <p>Headspring</p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4 media">
+              <div class="media-left">
+                <img src="images/david.jpg" height="100" width="100" class="img-circle img-responsive">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">David Savage</h4>
+                <p>.NET Developer</p>
+                <p>Headspring</p>
+              </div>
+            </div>
+            <div class="col-md-4 media">
+              <div class="media-left">
+                <img src="images/gautam.jpg" height="100" width="100" class="img-circle img-responsive">
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Gautam Gowda</h4>
+                <p>Project Manager</p>
+                <p>Headspring</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section2" id="faq">
+        <div class="container ptb">
+          <h3>FAQ</h3>
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    FAQ #1 - How much does it cost a charity?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <p>Nothing! All work completed during the event is provided at no charge.</p>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-4 media">
-                <div class="media-left">
-                  <img src="images/eduardo.jpg" height="100" width="100" class="img-circle img-responsive">
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">Eduardo Ramos</h4>
-                  <p>.NET Developer</p>
-                  <p>Headspring</p>
-                </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    FAQ #2 - Do developers have to support the project after the event?
+                  </a>
+                </h4>
               </div>
-              <div class="col-md-4 media">
-                <div class="media-left">
-                  <img src="images/claudia.jpg" height="100" width="100" class="img-circle img-responsive">
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">Claudia Love</h4>
-                  <p>Designer</p>
-                  <p>Headspring</p>
-                </div>
-              </div>
-              <div class="col-md-4 media">
-                <div class="media-left">
-                  <img src="images/dane.jpg" height="100" width="100" class="img-circle img-responsive">
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">Dane Schilling</h4>
-                  <p>.NET Developer</p>
-                  <p>Headspring</p>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <p>There are no strings attached.  What happens at GiveCamp stays at GiveCamp.  The code stays with the charity - and developers are not allowed to charge charities for work completed.</p>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-md-4 media">
-                <div class="media-left">
-                  <img src="images/david.jpg" height="100" width="100" class="img-circle img-responsive">
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">David Savage</h4>
-                  <p>.NET Developer</p>
-                  <p>Headspring</p>
-                </div>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    FAQ #3 - What happens if we don't finish?
+                  </a>
+                </h4>
               </div>
-              <div class="col-md-4 media">
-                <div class="media-left">
-                  <img src="images/gautam.jpg" height="100" width="100" class="img-circle img-responsive">
-                </div>
-                <div class="media-body">
-                  <h4 class="media-heading">Gautam Gowda</h4>
-                  <p>Project Manager</p>
-                  <p>Headspring</p>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <p>
+                    It is the goal of each event to properly scope the projects for completion.
+                    If the team is unable to complete the project it is possible that a few individuals may volunteer to wrap up the work at no charge, but this is not guaranteed.
+                  </p>
                 </div>
               </div>
             </div>
           </div>
-        </section>
-        <section class="section2" id="faq">
-          <div class="container ptb">
-            <h3>FAQ</h3>
-            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingOne">
-                  <h4 class="panel-title">
-                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                      FAQ #1 - How much does it cost a charity?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                  <div class="panel-body">
-                    <p>Nothing! All work completed during the event is provided at no charge.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                  <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      FAQ #2 - Do developers have to support the project after the event?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                  <div class="panel-body">
-                    <p>There are no strings attached.  What happens at GiveCamp stays at GiveCamp.  The code stays with the charity - and developers are not allowed to charge charities for work completed.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingThree">
-                  <h4 class="panel-title">
-                    <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                      FAQ #3 - What happens if we don't finish?
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-                  <div class="panel-body">
-                    <p>
-                      It is the goal of each event to properly scope the projects for completion.
-                      If the team is unable to complete the project it is possible that a few individuals may volunteer to wrap up the work at no charge, but this is not guaranteed.
-                    </p>
-                  </div>
-                </div>
-              </div>
+        </div>
+      </section>
+      <section id="sponsors">
+        <div class="container ptb">
+          <h3>Sponsors</h3>
+          <div class="row">
+            <div class="col-md-6 margin-bottom-20 text-center">
+              <img src="images/headspring-logo.svg" width="400" height="62" class="img-responsive inlineblock">
+            </div>
+            <div class="col-md-6 text-center">
+              <img src="images/dwh-logo.svg" width="400" height="85" class="img-responsive inlineblock">
             </div>
           </div>
-        </section>
-        <section id="sponsors">
-          <div class="container ptb">
-            <h3>Sponsors</h3>
-            <div class="row">
-              <div class="col-md-6 margin-bottom-20 text-center">
-                <img src="images/headspring-logo.svg" width="400" height="62" class="img-responsive inlineblock">
-              </div>
-              <div class="col-md-6 text-center">
-                <img src="images/dwh-logo.svg" width="400" height="85" class="img-responsive inlineblock">
-              </div>
+        </div>
+      </section>
+      <section class="section1" id="contact">
+        <div class="container ptb">
+          <h3 class="margin-bottom-30">Contact</h3>
+          <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+              <form class="contact" data-bind="submit: submit">
+                <div class="row">
+                  <div class="form-group col-md-6">
+                    <label for="name">Name</label>
+                    <input type="name" class="form-control" data-bind="textInput: name" id="name" required>
+                  </div>
+                  <div class="form-group col-md-6">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" data-bind="value: email" id="email" required>
+                  </div>
+                </div>
+                <div class="form-group margin-bottom-40">
+                  <label>Message</label>
+                  <textarea class="form-control" rows="3" data-bind="textInput: message" required></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-conf btn-clear">Send Message</button>
+                </div>
+              </form>
             </div>
           </div>
-        </section>
-        <section class="section1" id="contact">
-          <div class="container ptb">
-            <h3 class="margin-bottom-30">Contact</h3>
-            <div class="row">
-              <div class="col-md-8 col-md-offset-2">
-                <form class="contact">
-                  <div class="row">
-                    <div class="form-group col-md-6">
-                      <label for="name">Name</label>
-                      <input type="name" class="form-control" id="name">
-                    </div>
-                    <div class="form-group col-md-6">
-                      <label for="email">Email</label>
-                      <input type="email" class="form-control" id="email">
-                    </div>
-                  </div>
-                  <div class="form-group margin-bottom-40">
-                    <label>Message</label>
-                    <textarea class="form-control" rows="3"></textarea>
-                  </div>
-                  <div class="text-center">
-                    <button type="submit" class="btn btn-conf btn-clear">Send Message</button>
-                  </div>
-                </form>
-              </div>
-            </div>
+        </div>
+      </section>
+      <div id="social">
+        <div class="container">
+          <div class="row centered">
+            <div class="col-md-8 col-md-offset-2">
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </div><!--/col-md-8-->
           </div>
-        </section>
-        <div id="f">
-          <div class="container">
-            <div class="row centered">
-              <div class="col-md-8 col-md-offset-2">
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-facebook"></i></a>
-              </div><!--/col-md-8-->
-            </div>
-          </div><!--/container-->
-        </div><!--/.F-->
+        </div><!--/container-->
+      </div><!--/.F-->
 
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-          (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-          e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-          e.src='//www.google-analytics.com/analytics.js';
-          r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-          ga('create','UA-XXXXX-X');ga('send','pageview');
+      <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+      <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+        function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+        e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+        e.src='//www.google-analytics.com/analytics.js';
+        r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+        ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="/bower_components/jquery/dist/jquery.js"></script>
-        <script src="/lib/scrolling-nav/scrolling-nav.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="/bower_components/jquery.easing/js/jquery.easing.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
@@ -410,6 +411,8 @@
         <script src="/bower_components/bootstrap/js/collapse.js"></script>
         <script src="/bower_components/bootstrap/js/tab.js"></script>
         <script src="/bower_components/jquery.easing/js/jquery.easing.min.js"></script>
+        <script src="/bower_components/knockout/dist/knockout.js"></script>
+        <script src="/bower_components/toastr/toastr.min.js"></script>
         <!-- endbuild -->
 
         <!-- build:js scripts/main.js -->
