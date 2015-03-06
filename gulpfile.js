@@ -73,7 +73,7 @@ gulp.task('deploy', function() {
 
   return gulp.src('dist/**/*')
   .pipe($.ftp({
-    host: 'waws-prod-bn1-003.ftp.azurewebsites.windows.net',
+    host: 'waws-prod-bn1-005.ftp.azurewebsites.windows.net',
     user: process.env.FTP_USERNAME,
     pass: process.env.FTP_PASSWORD,
     remotePath: '/site/wwwroot'
