@@ -1,4 +1,4 @@
-#Houston Give Camp 2015 [![Build Status](https://travis-ci.org/epik000/HoustonGiveCamp.svg?branch=master)](https://travis-ci.org/epik000/HoustonGiveCamp)
+#Houston Give Camp 2015 [![Build Status](https://travis-ci.org/daneSchilling/HoustonGiveCamp.svg?branch=master)](https://travis-ci.org/daneSchilling/HoustonGiveCamp)
 
 ##Instruction
 
