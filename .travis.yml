@@ -4,8 +4,8 @@ node_js:
 - '0.12'
 env:
   global:
-  - secure: Swu6LINfQGhinOMtYyopRGH8zlHQed5ErI/XXk0H4J+r+Ev3bTjCpqt209dcuVnx7OsiQcLgx9NBbDRRsvyWD+NLTiEYBseMEqH97d06zzASDL7lNxCXFnd20byU+UevwdXTYqPXOf5h+BYJkzQD+mI1uA1gBr7ST4ZHl/urk5U=
-  - secure: h+dMd2+btWavGeNSGWr4Cy4n3LWIyLWIchso3cjNIqVnjDS44eKqoCX0IgbQbNfYxoPgl85+vB7Fl7nKBPsZTNtnuhIzqfgRtc4veUUmidZIHJ2yOX8S/qKNWMotx2jki6nCaxqxDm5gTQD/ZiWD0a550kmifgjvJwcUiVEGyy4=
+  - secure: dhw9hAskiazOXhKe/6iYUc3wQ/qvB5PyCf4DzZuZ/HCaHMRylFT/0fFiZE4VP9/jDbwcldrt5VTGcDPiC0kn4/bAoOsxDENUe3Jt2/5HaWhRgKow0a+KamszdKSA/c5Zavw2J3vjgb9EkCJgPcn95YKpZjVb3u3nGz2YPxpvL7E=
+  - secure: E65sZj/qPArU83iFvUHtbXLWnxy7Qs9QnVbBNAMbnvAmx3OgS6Je4NqeVL98Vir84icVgLDUutrPZwN3LXwwRoqOrwpaB2W/550+zXiZXx0HDM3gjsyhq1fX13FcqP2j91gXUuM8T1PLVuZuiy7TrT/cxvY2yctIAvXUuJieW9U=
 before_script:
 - npm install -g gulp
 - npm install -g bower
