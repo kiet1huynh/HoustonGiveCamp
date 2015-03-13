@@ -94,6 +94,7 @@ body {
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
 .ptb {padding-top: 60px; padding-bottom: 60px;}
+.ptb .media { margin-top: 15px;}
 
 .clear {
 	clear: both;
